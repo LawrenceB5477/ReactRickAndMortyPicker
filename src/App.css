@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px; 
+}
+
+body {
+    padding: 0;
+    margin: 0; 
+    font-size: 14px; 
+    font-family: sans-serif;
+}
+
+.episode-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.episode-box {
+    border: 1px solid #3dd9e4;
+    border-radius: 2px;
+    margin: .9rem;
+    transition: all .2s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-overflow: ellipsis;
+    position: relative;
+    width: 20%;
+}
+
+.episode-box button {
+    color: #76d6dd; 
+    background: white;
+    border: 2px solid #76d6dd;
+    padding: 0.5rem 1rem;
+}
+
+.episode-box button:active {
+    background: #76d6dd;
+    color: white; 
+}
+
+.episode-box img {
+    width: 100%;
+}
+
+.episode-box:hover {
+    transform: scale(1.1);
+}
+
+.episode-box__inner {
+    text-align: center;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+
+.episode-box__inner div {
+    padding: .5rem; 
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid black;
+    position: sticky;
+    padding: .5rem; 
+    top: 0; 
+    align-items: center;
+    z-index: 5;
+}
+
+.header .navigate {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header .navigate a {
+    padding: 0.5rem 0rem;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+}
+
+.header .navigate a:hover {
+    color: white; 
+    background: black;
+}
